@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+    window.onload = () =>{
+        const form=document.querySelector('form');
+
+        const formHandler= (event)=>{
+
+            event.preventDefault();
+            const nume=document.getElementById('nume').value;
+            const telefon=document.getElementById('telefon').value;
+            if(!nume || !telefon){
+                alert("Introduceti valori in ambele campuri!");
+                return ;
+            }
+            const tbody=document.querySelector('tbody');
+            const rand=document.createElement('tr');
+            function adauga(text){
+                const celula=document.createElement('td');
+                celula.innerText=text;
+                rand.append(celula);
+            }
+            adauga(nume);
+            adauga(telefon);
+            tbody.append(rand);
+        }
+        form.onsubmit=formHandler;
+
+    }
+   </script>
+</head>
+<body>
+    <form> <br>
+        <label>Nume</label> 
+        <input type="text" id="nume"> <br> <br>
+        <Label> Telefon</Label> 
+        <input type="text" id="telefon"> <br> <br>
+        <input type="submit" value="Adauga" id="btnAdauga">
+    </form>
+     <table style="border: 2px;"><br>
+        <thead>
+            <tr>
+                <th>Nume</th>
+                <th>Telefon</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.onload = () =>{
+            const btnMesaj=document.getElementById("mesaj");
+            btnMesaj.addEventListener('click',()=>{
+                const mesaj="Sa ai o zi frumoasa!";
+                console.log(mesaj);
+
+                const evCustom = new CustomEvent('mesajTrimis',{
+                bubbles : true,
+                detail : { info :'A fost adaugat un mesaj cu ajutorul evenimentului custom!'}
+                });
+
+                btnMesaj.dispatchEvent(evCustom);
+            });
+
+            const body=document.querySelector('body');
+            body.addEventListener('mesajTrimis',(event)=>{
+                console.log('Evenimentul custom "mesajTrimis" a fost prins!');
+                const p=document.createElement('p');
+                p.innerText=event.detail.info;
+                body.append(p);
+                });
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Mesajul zilei" id="mesaj">
+</body>
+</html>

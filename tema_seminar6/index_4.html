@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punctul 4</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif
+        }
+        .container{
+            padding:10px;
+            width:auto;
+            text-align:left;
+
+        }
+        p.title{
+           padding-left:25%;
+        }
+
+        form{
+            background-color:rgb(238, 233, 233);
+            padding:30px;
+            padding-bottom:15px;
+            width:700px;
+            margin:auto;
+            border:none;
+            border-radius:5px;
+        }
+        label{
+            display:block;
+            text-align:left;
+            margin-bottom:0px;
+            
+        }
+        .buton{
+            display:block;
+            margin-top:10px;
+            padding:10px 25px;
+            background-color:forestgreen;
+            border:none;
+            border-radius:5px;
+            color:aliceblue;
+        }
+        input[type=text],select,textarea{
+            width:100%;
+            display:inline-block;
+            box-sizing:border-box;
+            margin-top:5px;
+            margin-bottom:15px;
+            padding:15px;
+            border:thin solid lightgray;
+            border-radius:10px;
+        }
+        textarea.subject{
+            padding-top:10px;
+            padding-bottom:200px;
+            padding-right:25px;
+            padding-left:25px;
+            
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+    <p class="title"><b>Contact Form</b></p>
+    <form >
+        <label for="firstName">First Name</label>
+        <input type="text" placeholder="Your name.." name="firstName">
+        <label for="lastName">Last Name</label>
+        <input type="text" placeholder="Your last name.." name="lastName">
+        <label for="country">Country</label>
+        <select name="country">
+            <option>Romania</option>
+            <option selected>Hungary</option>
+            <option>Spain</option>
+            <option>Italy</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea type="text" class="subject" name="subject" placeholder="Write something.."></textarea>
+        <button type="submit" class="buton">Submit</button>
+    </form>
+    </div>
+</body>
+</html>

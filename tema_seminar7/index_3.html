@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Chess Table</title>
+     <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 40px;
+    background-color: #5d5d5d;
+}
+
+.wrapper{
+    width:100%;
+    height:600px;
+    margin:auto;
+}
+
+.rand,.wrapper-inner{
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+}
+
+.box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid brown;
+    box-sizing: border-box;
+    width:100%;
+    height:80px;
+}
+
+.box-inner{
+    display:flex;
+    padding:10px;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+
+.rand:nth-child(odd) .box:nth-child(odd){
+    background-color:black;
+}
+
+.rand:nth-child(odd) .box:nth-child(even){
+    background-color:white;
+}
+
+.rand:nth-child(even) .box:nth-child(odd){
+    background-color:white;
+}
+
+.rand:nth-child(even) .box:nth-child(even){
+    background-color:black;
+}
+     </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top">
+        <div class="wrapper-inner">
+          <div class="box-inner">A</div>
+          <div class="box-inner">B</div>
+          <div class="box-inner">C</div>
+          <div class="box-inner">D</div>
+          <div class="box-inner">E</div>
+          <div class="box-inner">F</div>
+          <div class="box-inner">G</div>
+          <div class="box-inner">H</div>
+        </div>
+      </div>
+
+      <div class="rand">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      </div>
+
+      <div class="rand">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      </div>
+
+      <div class="rand">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      </div>
+
+      <div class="rand">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      </div>
+
+      <div class="rand">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      </div>
+
+      <div class="rand">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      </div>
+
+      <div class="rand">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      </div>
+
+      <div class="rand">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      </div>
+      
+      <div class="bottom">
+        <div class="wrapper-inner">
+          <div class="box-inner">A</div>
+          <div class="box-inner">B</div>
+          <div class="box-inner">C</div>
+          <div class="box-inner">D</div>
+          <div class="box-inner">E</div>
+          <div class="box-inner">F</div>
+          <div class="box-inner">G</div>
+          <div class="box-inner">H</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
